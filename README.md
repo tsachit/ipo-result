@@ -36,5 +36,7 @@ python main.py 1234567890123456
 You can also create alias in your `.bashrc` or `.zshrc` for shortcut so you don't have to keep entering your BOID.
 ```
 alias ipo="source ~/ipo-result/venv/bin/activate && python ~/ipo-result/main.py 1234567890123456 && deactivate"
-
 ```
+
+*The above example assumes that the project is in home folder, change it if you place it else where. Sorry if this does not work on windows* 😂
+
