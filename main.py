@@ -58,16 +58,19 @@ print('You can also provide BOID directly after main.py to avoid extra step')
 print('Example: python main.py 1234567890123456\n')
 
 result = fetchContent()
-df = pd.DataFrame(result)
+if(len(result)):
+    df = pd.DataFrame(result)
 
-print('===========================LIST OF AVAILABLE COMPANIES===========================\n')
-print(df.to_string(index=False))
-print('=================================================================================\n')
+    print('===========================LIST OF AVAILABLE COMPANIES===========================\n')
+    print(df.to_string(index=False))
+    print('=================================================================================\n')
 
-id = getID()
-name = df[df.id == id].name.tolist()[0]
-boid = getBOID()
+    id = getID()
+    name = df[df.id == id].name.tolist()[0]
+    boid = getBOID()
 
-print(f"\nChecking for Company: {name} and BOID: {boid}\n")
+    print(f"\nChecking for Company: {name} and BOID: {boid}\n")
 
-print(checkResult(id, boid))
+    print(checkResult(id, boid))
+else:
+    print('Server busy, please try again later. Thanks')
