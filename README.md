@@ -40,3 +40,7 @@ alias ipo="source ~/ipo-result/venv/bin/activate && python ~/ipo-result/main.py 
 
 *The above example assumes that the project is in home folder, change it if you place it else where. Sorry if this does not work on windows* 😂
 
+
+### Demo
+
+![Preview or running ipo-result](https://raw.githubusercontent.com/tsachit/ipo-result/main/preview.png)
